@@ -4,17 +4,17 @@
 
 Summary:	Library for interfacing with Linux IIO devices
 Name:		libiio
-Version:	0.24
+Version:	0.25
 Release:	1
 License:	LGPL v2.1+ (library), GPL v2 (utilities)
 Group:		Libraries
 Source0:	https://github.com/analogdevicesinc/libiio/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	914563b130e0451b372d8396d9dd178f
+# Source0-md5:	c8d5ea5ab44c2e99fab82baea9c92c57
 Source1:	iiod.sysconfig
 URL:		http://analogdevicesinc.github.io/libiio/
 BuildRequires:	avahi-devel
 BuildRequires:	bison
-BuildRequires:	cmake >= 2.8.7
+BuildRequires:	cmake >= 3.10
 %{?with_apidocs:BuildRequires:	doxygen}
 BuildRequires:	flex
 BuildRequires:	libaio-devel
@@ -134,7 +134,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files utils
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/iio_adi_xflow_check
 %attr(755,root,root) %{_bindir}/iio_attr
 %attr(755,root,root) %{_bindir}/iio_genxml
 %attr(755,root,root) %{_bindir}/iio_info
