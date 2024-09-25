@@ -4,12 +4,12 @@
 
 Summary:	Library for interfacing with Linux IIO devices
 Name:		libiio
-Version:	0.25
+Version:	0.26
 Release:	1
 License:	LGPL v2.1+ (library), GPL v2 (utilities)
 Group:		Libraries
 Source0:	https://github.com/analogdevicesinc/libiio/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	c8d5ea5ab44c2e99fab82baea9c92c57
+# Source0-md5:	0f8d9e6f44afa72a5493fcace7c26311
 Source1:	iiod.sysconfig
 URL:		http://analogdevicesinc.github.io/libiio/
 BuildRequires:	avahi-devel
